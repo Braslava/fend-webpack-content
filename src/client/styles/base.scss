@@ -1,7 +1,11 @@
+$base-color: #ebaef3;
+$secondary-color: #6c1879;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: $base-color;
 }
 
 main {

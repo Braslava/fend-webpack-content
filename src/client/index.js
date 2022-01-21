@@ -5,7 +5,7 @@ import './styles/base.scss';
 import './styles/footer.scss';
 import './styles/form.scss';
 import './styles/header.scss';
-alert('I EXIST');
-alert('I still exist');
+
+//alert('I still exist');
 
 console.log(checkForName);

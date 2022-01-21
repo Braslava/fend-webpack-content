@@ -1,5 +1,25 @@
+$base-color: #ebaef3;
+$secondary-color: #6c1879;
+
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+	background-color: $secondary-color;
+	color: white;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	a {
+		color: white;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
 }
