@@ -1,11 +1,10 @@
-$base-color: #ebaef3;
-$secondary-color: #6c1879;
+@use 'variables';
 
 header {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 40px;
-	background-color: $secondary-color;
+	background-color: variables.$secondary-color;
 	color: white;
 }
 
