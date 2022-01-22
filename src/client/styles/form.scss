@@ -1,7 +1,7 @@
 @use 'variables';
 
 .form {
-	border: 1px solid #545454;
+	border: 1px solid variables.$secondary-color;
 	border-radius: 3px;
 	padding: 40px;
 	display: grid;
