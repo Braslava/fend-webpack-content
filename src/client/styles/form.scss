@@ -1,12 +1,33 @@
-form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
-}
+@use 'variables';
 
-input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
+.form {
+	border: 1px solid #545454;
+	border-radius: 3px;
+	padding: 40px;
+	display: grid;
+	gap: 0.8rem;
+
+	input {
+		padding: 8px 20px;
+		width: 100%;
+		line-height: 16px;
+		margin: 10px 0;
+	}
+
+	.form__submit {
+		padding: 0.8rem 2rem;
+		border: none;
+		cursor: pointer;
+		border-radius: 5px;
+		background-color: variables.$secondary-color;
+		color: white;
+		max-width: 300px;
+		justify-self: center;
+
+		&:focus,
+		&:hover {
+			outline: 2px solid black;
+			opacity: 0.8;
+		}
+	}
 }
