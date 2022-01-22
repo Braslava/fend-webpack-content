@@ -9,6 +9,10 @@ module.exports = {
 	mode: 'development',
 	devtool: 'source-map',
 	entry: './src/client/index.js',
+	output: {
+		libraryTarget: 'var',
+		library: 'CLient',
+	},
 	module: {
 		rules: [
 			{
@@ -26,8 +30,8 @@ module.exports = {
 			},
 			{
 				test: /\.scss$/,
-				use: [ 'style-loader', 'css-loader', 'sass-loader' ]
-		}
+				use: ['style-loader', 'css-loader', 'sass-loader'],
+			},
 		],
 	},
 	plugins: [

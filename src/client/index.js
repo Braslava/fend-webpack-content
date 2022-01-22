@@ -9,3 +9,5 @@ import './styles/header.scss';
 //alert('I still exist');
 
 console.log(checkForName);
+
+export { checkForName, handleSubmit };
