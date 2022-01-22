@@ -6,9 +6,19 @@ export function handleSubmit(event) {
 	Client.checkForName(formText);
 
 	console.log('::: Form Submitted :::');
-	fetch('http://localhost:8081/test')
-		.then((res) => res.json())
-		.then(function (res) {
-			document.getElementById('results').innerHTML = res.message;
-		});
+	getCatFact().then(function (res) {
+		document.getElementById('results').innerHTML = res.text;
+	});
 }
+
+const getCatFact = async () => {
+	const url = `https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1`;
+	const response = await fetch(url);
+	try {
+		const data = await response.json();
+		return data;
+	} catch (error) {
+		// appropriately handle the error
+		console.log('error', error);
+	}
+};

@@ -7,7 +7,7 @@ import './styles/form.scss';
 import './styles/header.scss';
 
 //alert('I still exist');
-
-console.log(checkForName);
+const submitButton = document.querySelector('.form__submit');
+submitButton.addEventListener('click', handleSubmit);
 
 export { checkForName, handleSubmit };
