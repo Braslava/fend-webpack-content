@@ -51,4 +51,3 @@ module.exports = {
 		new BundleAnalyzerPlugin(),
 	],
 };
-//output: { ...output options }

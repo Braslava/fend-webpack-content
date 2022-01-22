@@ -33,6 +33,7 @@
     "style-loader": "^2.0.0",
     "terser-webpack-plugin": "^4.2.3",
     "webpack-bundle-analyzer": "^4.5.0",
-    "webpack-dev-server": "^3.11.3"
+    "webpack-dev-server": "^3.11.3",
+    "workbox-webpack-plugin": "^6.4.2"
   }
 }
